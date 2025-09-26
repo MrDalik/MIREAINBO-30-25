@@ -6,6 +6,7 @@ import java.util.Random;
 public class Main {
     static void main() {
         String flag;
+        Scanner scan = new Scanner(System.in);
         do {
             flag = "0";
             Random random = new Random();
@@ -63,6 +64,8 @@ public class Main {
                 } while (true);
             }
             System.out.println(ar);
-        } while (flag.equals('1'));
+            System.out.println("1 - заново");
+            flag = scan.nextLine();
+        } while (flag.equals("1"));
     }
 }
