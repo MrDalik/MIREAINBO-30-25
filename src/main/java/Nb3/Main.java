@@ -66,6 +66,7 @@ public class Main {
             System.out.println(ar);
             System.out.println("1 - заново");
             flag = scan.nextLine();
+
         } while (flag.equals("1"));
     }
 }
